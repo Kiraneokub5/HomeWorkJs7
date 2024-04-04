@@ -1,0 +1,20 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#mainImage {
+  text-align: center;
+}
+
+#largeImage {
+  max-width: 300px;
+  max-height: 300px;
+}
