@@ -6,6 +6,9 @@ function initGallery() {
     document.querySelector(`img[tabindex="${i}"]`).addEventListener("mouseleave", function() {
       console.log("Mouseleave event fired.");
     });
+    document.querySelector(`img[tabindex="${i}"]`).addEventListener("focus", function() {
+      tabfocus();
+    });
   }
 }
 
@@ -21,4 +24,8 @@ function hideImage() {
   document.getElementById('largeImage').src = '';
   document.getElementById('largeImage').alt = '';
   console.log("Image blur.");
+}
+
+function tabfocus() {
+  console.log("Tabfocus event fired.");
 }
